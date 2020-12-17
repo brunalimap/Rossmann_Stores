@@ -10,7 +10,7 @@ import pandas as pd
 
 class Rossmann (object):
     
-    def _init_(self):
+     def __init__( self ):
         
         self.home_path= '/home/bruna/Documentos/DataScience_em_Producao/'
         self.competition_distance_scaler   = pickle.load( open( self.home_path + 'parameter/competition_distance_scaler.pkl', 'rb') )
