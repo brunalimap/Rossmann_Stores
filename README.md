@@ -2,8 +2,8 @@
 This repository contains the codes of the Data Science em Produção. - By Meigarom
 
 
-Próximos passos:
+# Next steps:
 
-- Tradução do Notebook
-- Elaboração do README.md
-- Melhorias no bot do telegram
+- Translate of Notebook
+- Preparation of README.md
+- Telegram bot improvements
