@@ -82,24 +82,30 @@ app = Flask(__name__)
 @app.route('/', methods=['GET','POST'])
 
 def index():
+       
+    
     if request.method =='POST':
         message = request.get_json()
         
-        chat_id,store_id = parse_message(message)
+        
+        # parses message comming from json
+        chat_id, store_id = parse_message(message)
         
         if store_id != 'error':
+            
             #loading data
             data = load_dataset(store_id)
             
-            if data !='error':
+            if data !='error
+            
                 #prediction
                 d1 = predict(data)
 
-                #calculation
+                #calculates
                 d2 = d1[['store', 'prediction']].groupby( 'store' ).sum().reset_index()
 
                 #send message
-                msg = 'Store Number {} will sell R${:,.2f} in the next 6 weeks'.format( 
+                msg = 'The estimated total amount sales in the store number {}  is of US${:,.2f} for next 6 week.'.format( 
                 d2['store'].values[0], 
                 d2['prediction'].values[0])
 
@@ -109,9 +115,15 @@ def index():
             else:    
                 send_message(chat_id,'Store not Available, please type again Store ID.')
                 return Response('ok',status=200)
+        
+        elif(store_id == 'start'):
+             send_message(chat_id,'Hi! What store number do you want to forecast sales for the next 6 weeks?'
+                return Response('ok',status=200)
+        
+            
                              
         else:    
-            send_message(chat_id,'Store ID is Wrong')
+            send_message(chat_id,'This is not number store. Please  try again /n Example: /12')
             return Response('ok',status=200)
     
     else:
