@@ -94,13 +94,13 @@ def index():
         # parses message comming from json
         chat_id, store_id = parse_message(message)
         
-        if (store_id != 'error' and store_id != 'start'):
+        if (store_id != 'error'):
 
             
             #loading data
             data = load_dataset(store_id)
             
-            if data !='error':
+            if (data !='error' and store_id != 'start'):
             
                 #prediction
                 d1 = predict(data)
@@ -109,23 +109,20 @@ def index():
                 d2 = d1[['store', 'prediction']].groupby( 'store' ).sum().reset_index()
 
                 #send message
-                msg = 'The estimated total amount sales in the store number {}  is of US${:,.2f} for next 6 week.'.format( 
+                msg = 'The estimated total amount sales in the store number {}  is of US${:,.2f}, for next 6 week.'.format( 
                 d2['store'].values[0], 
                 d2['prediction'].values[0])
 
                 send_message(chat_id,msg)
                 return Response('ok',status=200)
 
+
             else:    
-                send_message(chat_id,'Store not Available, please type again Store ID.')
+                send_message(chat_id,'Store not available. Please type again store number.')
                 return Response('ok',status=200)
-            
-        elif (store_id == 'start'):
-            send_message(chat_id,'Hi! What store number do you want to forecast sales for the next 6 weeks?')
-            return Response('ok', status=200)
-                                     
+
         else:    
-            send_message(chat_id,'This is not number store. Please  try again /n Example: /12')
+            send_message(chat_id,'This is not number store. Please try again. Example: /01')
             return Response('ok',status=200)
     
     else:
