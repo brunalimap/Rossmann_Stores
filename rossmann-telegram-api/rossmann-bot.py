@@ -50,10 +50,10 @@ def load_dataset(store_id):
         
     return data
 #https://sales-rossmann-prediction.herokuapp.com/rossmann/predict
+
 def predict(data):
-    #API Call
-https://git.heroku.com/sales-rossmann-telegram-bot.git
-    url = 'https://git.heroku.com/sales-rossmann-telegram-bot.git'
+
+    url = 'https://sales-rossmann-prediction.herokuapp.com/rossmann/predict'
     header = {'Content-type': 'application/json'}
     data = data
 
