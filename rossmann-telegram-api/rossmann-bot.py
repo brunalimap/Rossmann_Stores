@@ -23,9 +23,11 @@ def send_message(chat_id,text):
     
     r = requests.post(url,json={'text':text})
     print('Status Code {}'.format(r.status_code))
+    
     return None
 
 def load_dataset(store_id):
+    
     #loading test dataset
     df10 = pd.read_csv('test.csv')
     df_store_raw = pd.read_csv('store.csv')
@@ -49,7 +51,7 @@ def load_dataset(store_id):
         data = 'error'
         
     return data
-#https://sales-rossmann-prediction.herokuapp.com/rossmann/predict
+
 
 def predict(data):
 
@@ -92,7 +94,8 @@ def index():
         # parses message comming from json
         chat_id, store_id = parse_message(message)
         
-        if store_id != 'error':
+        if (store_id != 'error' and store_id != 'start'):
+
             
             #loading data
             data = load_dataset(store_id)
@@ -116,13 +119,11 @@ def index():
             else:    
                 send_message(chat_id,'Store not Available, please type again Store ID.')
                 return Response('ok',status=200)
-        
-        elif(store_id == 'start'):
-             send_message(chat_id,'Hi! What store number do you want to forecast sales for the next 6 weeks?'
-                return Response('ok',status=200)
-        
             
-                             
+        elif (store_id == 'start'):
+            send_message(chat_id,'Hi! What store number do you want to forecast sales for the next 6 weeks?')
+            return Response('ok', status=200)
+                                     
         else:    
             send_message(chat_id,'This is not number store. Please  try again /n Example: /12')
             return Response('ok',status=200)
