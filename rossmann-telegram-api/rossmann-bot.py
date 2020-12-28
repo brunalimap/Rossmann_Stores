@@ -49,10 +49,11 @@ def load_dataset(store_id):
         data = 'error'
         
     return data
-
+#https://sales-rossmann-prediction.herokuapp.com/rossmann/predict
 def predict(data):
     #API Call
-    url = 'https://sales-rossmann-prediction.herokuapp.com/rossmann/predict'
+https://git.heroku.com/sales-rossmann-telegram-bot.git
+    url = 'https://git.heroku.com/sales-rossmann-telegram-bot.git'
     header = {'Content-type': 'application/json'}
     data = data
 
