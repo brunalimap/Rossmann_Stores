@@ -1,6 +1,6 @@
 # Predict Sales Rossmann Stores
 
-<img align="center" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/img01.jpg" >
+<img align="center" alt="150px" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/img01.jpg" >
 
 
 
