@@ -1,14 +1,16 @@
-# Predict Sales Rossmann Stores
+<h1 align="center"> Predict Sales Rossmann Stores </h1> 
 
 <img align="center"  height="450" width="1000" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/img01.jpg" >
 
-### 1.0 Context
+## 1.0 Context
 
 Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied. 
 
 ### 2.0 Business Challenge
 
 ### 3.0 Solution
+
+<img align="center"src="https://github.com/brunalimap/brunalimap/blob/main/img/rossmann_video.mp4">
 
 ### 4.0 Next steps:
 
