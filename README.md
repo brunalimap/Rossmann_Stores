@@ -10,7 +10,7 @@ Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Ros
 
 ### 3.0 Solution
 
-<img align="center" height="500" width="400" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
+<img align="center" height="550" width="350" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
 ### 4.0 Next steps:
 
