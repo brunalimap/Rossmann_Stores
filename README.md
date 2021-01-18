@@ -6,17 +6,19 @@
 
 <p> Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. Store sales are influenced by many factors, including promotions, competition, school and state holidays, seasonality, and locality. With thousands of individual managers predicting sales based on their unique circumstances, the accuracy of results can be quite varied. </p>
 
-### 2.0 Business Challenge
+## 2.0 Business Challenge
 
-### 3.0 Solution
+
+
+## 3.0 Solution - Telegram Bot
 
 <img align="center" height="550" width="350" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
-### 4.0 Next steps:
+## 4.0 Next steps:
 
 - Translate of Notebook
 - Preparation of README.md
-- Telegram bot improvements
 
-### 5.0  References
+
+## 5.0  References
 This repository contains the codes of the Data Science em Produção. - By Meigarom
