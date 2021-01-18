@@ -8,7 +8,7 @@
 
 ## 2.0 Business Challenge
 
-<p> In a monthly meeting with managers, Store CEO Rossmann made the proposal to renovate all its stores. To carry out the renovations, the CEO needs to predict how much each store each store will sell in the next 6 weeks. </p>
+<p> In a monthly meeting with managers, Store CFO Rossmann made the proposal to renovate all its stores. To carry out the renovations, the CFO needs to predict how much each store each store will sell in the next 6 weeks. </p>
 
 
 
