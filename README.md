@@ -12,7 +12,7 @@
 
 ## 3.0 Solution - Telegram Bot
 
-<img align="center" height="550" width="350" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
+<img align="center" height="550" width="300" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
 ## 4.0 Next steps:
 
