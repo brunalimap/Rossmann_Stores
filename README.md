@@ -10,11 +10,11 @@ Rossmann operates over 3,000 drug stores in 7 European countries. Currently, Ros
 
 ### 3.0 Solution
 
-### Next steps:
+### 4.0 Next steps:
 
 - Translate of Notebook
 - Preparation of README.md
 - Telegram bot improvements
 
-###  References
+### 5.0  References
 This repository contains the codes of the Data Science em Produção. - By Meigarom
