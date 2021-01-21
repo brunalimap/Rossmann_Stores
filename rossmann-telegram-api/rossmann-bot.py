@@ -100,7 +100,7 @@ def index():
             #loading data
             data = load_dataset(store_id)
             
-            if (data !='error' and store_id != 'start'):
+            if (data !='error'):
             
                 #prediction
                 d1 = predict(data)
@@ -109,7 +109,7 @@ def index():
                 d2 = d1[['store', 'prediction']].groupby( 'store' ).sum().reset_index()
 
                 #send message
-                msg = 'The estimated total amount sales in the store number {}  is of US${:,.2f}, for next 6 week.'.format( 
+                msg = 'The estimated total amount sales in the store number {}  is of US${:,.2f}, for the next 6 weeks.'.format( 
                 d2['store'].values[0], 
                 d2['prediction'].values[0])
 
@@ -118,11 +118,11 @@ def index():
 
 
             else:    
-                send_message(chat_id,'Store not available. Please type again store number.')
+                send_message(chat_id,'Store not available. Please try again. Example: /01.')
                 return Response('ok',status=200)
 
         else:    
-            send_message(chat_id,'This is not number store. Please try again. Example: /01')
+            send_message(chat_id,'Hello, Which store do you want me to forecast sales for the next 6 weeks?')
             return Response('ok',status=200)
     
     else:
