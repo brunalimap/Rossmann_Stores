@@ -37,7 +37,7 @@
 <img align="center" height="550" width="300" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
 ## 5.0  References
-- [Link do curso](https://sejaumdatascientist.com/como-ser-um-data-scientist/) 
+- [Course Link](https://sejaumdatascientist.com/como-ser-um-data-scientist/) 
 
 ## 6.0 Next steps:
 
