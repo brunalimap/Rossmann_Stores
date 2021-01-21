@@ -43,3 +43,4 @@ Course Data Science em Produção - By Meigarom
 
 - [ ] Translate of Notebook
 - [ ] Preparation of README.md
+- [ ] Project presentation
