@@ -29,17 +29,33 @@
 - <b>Promo2Since[Year/Week]</b> - describes the year and calendar week when the store started participating in Promo2
 - <b>PromoInterval</b> - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
 
+## 4.0 Solution Delivery
+
+<b>- What is the context?</b>
+At a meeting with the leads of each department, the Rossmann's CEO made a proposal to renovate all of their store.
+
+- What is the couse?
+The Rossmann's CEO want to predict how much each store will sell on next 6 weeks. He need to know if the budget will be enough to make a renovate each store.
+
+- Who will lead the project?
+We need someone who really know what is the business problem, because he will lead the solution. Therefore, he's our stakeholder.
+
+- How will be our solution?
+
+<b>- What is the format?</b>
+- Granularity? 6 weeks
+- Problem type? Regression
+- How we will deliver? Telegram bot
 
 
-
-## 4.0 Solution - Telegram Bot
+## 5.0 Solution - Telegram Bot
 
 <img align="center" height="550" width="300" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
-## 5.0  References
+## 6.0  References
 - [Course Link](https://sejaumdatascientist.com/como-ser-um-data-scientist/) 
 
-## 6.0 Next steps:
+## 7.0 Next steps:
 
 - [ ] Translate of Notebook
 - [ ] Preparation of README.md
