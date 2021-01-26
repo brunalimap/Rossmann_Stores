@@ -41,16 +41,16 @@ The Rossmann's CFO want to predict how much each store will sell on next 6 weeks
 The Rossmann's CFO is our stakeholder
 
 <b>- What is the format?</b>
-- Granularity? Daily sales for the next 6 weeks
-- Problem type? Prediction Problem (Regression)
-- How we will deliver? Telegram bot
+<b>- Granularity?</b> Daily sales for the next 6 weeks
+<b>- Problem type?</b> Prediction Problem (Regression)
+<b>- How we will deliver?</b> Telegram bot
 
 
 ## 5.0 Telegram Bot
 
 <img align="center" height="550" width="300" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
-## 6.0 Analysis Notebooks
+## 6.0 Notebooks
 - [Notebook Link](https://github.com/brunalimap/DataScience_em_Producao/blob/main/notebooks/m010_v01_store_sales_prediction.ipynb) 
 
 ## 7.0  References
