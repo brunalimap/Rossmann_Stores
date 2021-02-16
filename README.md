@@ -59,3 +59,4 @@ The Rossmann's CFO is our stakeholder
 ## 8.0 Next steps:
 
 - [ ] Project presentation
+- [ ] Translate presentation to English
