@@ -58,5 +58,7 @@ The Rossmann's CFO is our stakeholder
 
 ## 8.0 Next steps:
 
+- [X] Update requirements.txt
 - [ ] Project presentation
 - [ ] Translate presentation to English
+- [ ] Update README.md
