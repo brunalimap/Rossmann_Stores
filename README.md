@@ -13,7 +13,7 @@
 
 ## 3.0 Summary
 
-- [Challenge presentation] (https://github.com/brunalimap/DataScience_em_Producao/blob/main/notebooks/storytelling_rossmann_stores.ipynb)
+- [Challenge presentation](https://github.com/brunalimap/Rossmann_Stores/blob/main/notebooks/storytelling_rossmann_stores.ipynb)
 - [Notebook Link](https://github.com/brunalimap/DataScience_em_Producao/blob/main/notebooks/m010_v01_store_sales_prediction.ipynb)
 
 ## 4.0 Data fields
