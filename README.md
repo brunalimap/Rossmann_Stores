@@ -11,7 +11,12 @@
 
 <p> In a monthly meeting with managers, Store CFO Rossmann made the proposal to renovate all its stores. To carry out the renovations, the CFO needs to predict how much each store each store will sell in the next 6 weeks. </p>
 
-## 3.0 Data fields
+## 3.0 Summary
+
+- [Challenge presentation] (https://github.com/brunalimap/DataScience_em_Producao/blob/main/notebooks/storytelling_rossmann_stores.ipynb)
+- [Notebook Link](https://github.com/brunalimap/DataScience_em_Producao/blob/main/notebooks/m010_v01_store_sales_prediction.ipynb)
+
+## 4.0 Data fields
 
 - <b>Id</b> - an Id that represents a (Store, Date) duple within the test set
 - <b>Store</b> - a unique Id for each store
@@ -29,7 +34,7 @@
 - <b>Promo2Since[Year/Week]</b> - describes the year and calendar week when the store started participating in Promo2
 - <b>PromoInterval</b> - describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store
 
-## 4.0 Solution 
+## 5.0 Solution 
 
 <b>- What is the context?</b>
 At a meeting with the leads of each department, the Rossmann's CFO made a proposal to renovate all of their store.
@@ -45,20 +50,17 @@ The Rossmann's CFO is our stakeholder
 - <b>Problem type?</b>Prediction Problem (Regression)
 - <b>How we will deliver?</b> Telegram bot
 
-
-## 5.0 Telegram Bot
+## 6.0 Telegram Bot
 
 <img align="center" height="550" width="300" src="https://github.com/brunalimap/DataScience_em_Producao/blob/main/img/rossmann_video.gif">
 
-## 6.0 Notebooks
-- [Notebook Link](https://github.com/brunalimap/DataScience_em_Producao/blob/main/notebooks/m010_v01_store_sales_prediction.ipynb) 
-
 ## 7.0  References
+
 - [Course Link](https://sejaumdatascientist.com/como-ser-um-data-scientist/) 
 
 ## 8.0 Next steps:
 
-- [X] Update requirements.txt
-- [ ] Project presentation
+- [x] Update requirements.txt
+- [x] Project presentation
 - [ ] Translate presentation to English
 - [ ] Update README.md
