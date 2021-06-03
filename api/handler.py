@@ -6,7 +6,7 @@ from flask import Flask, request, Response
 from rossmann.Rossmann import Rossmann
 
 #Loading Model
-model = pickle.load(open('/home/bruna/Documentos/DataScience_em_Producao/model/model_rossman.pkl', 'rb') )
+modelo = pickle.load(open('/home/bruna/Documentos/Rossmann_Stores/model/model_rossman.pkl', 'rb'))
 
 app = Flask(__name__)
 
@@ -35,7 +35,7 @@ def rossmann_predict():
         df3 = pipeline.data_preparation(df2)
 
         #prediction
-        df_response = pipeline.get_prediction(model,test_raw,df3)
+        df_response = pipeline.get_prediction(modelo,test_raw,df3)
     
         return df_response
 

@@ -7,17 +7,16 @@ import pandas as pd
 
 
 
-
 class Rossmann (object):
     
-     def __init__( self ):
+    def __init__(self):
         
-        self.home_path= '/home/bruna/Documentos/DataScience_em_Producao/'
-        self.competition_distance_scaler   = pickle.load( open( self.home_path + 'parameter/competition_distance_scaler.pkl', 'rb') )
-        self.competition_time_month_scaler = pickle.load( open( self.home_path + 'parameter/competition_time_month_scaler.pkl', 'rb') )
-        self.promo_time_week_scaler        = pickle.load( open( self.home_path + 'parameter/promo_time_week_scaler.pkl', 'rb') )
-        self.year_scaler                   = pickle.load( open( self.home_path + 'parameter/year_scaler.pkl', 'rb') )
-        self.store_type_scaler             = pickle.load( open( self.home_path + 'parameter/store_type_scaler.pkl', 'rb') )
+        self.home_path= '/home/bruna/Documentos/Rossmann_Stores/'
+        self.competition_distance_scaler   = pickle.load(open(self.home_path + 'parameter/competition_distance_scaler.pkl', 'rb'))
+        self.competition_time_month_scaler = pickle.load(open(self.home_path + 'parameter/competition_time_month_scaler.pkl', 'rb'))
+        self.promo_since_week_scaler        = pickle.load(open(self.home_path + 'parameter/promo_since_week_scaler.pkl', 'rb'))
+        self.year_scaler                   = pickle.load(open(self.home_path + 'parameter/year_scaler.pkl', 'rb'))
+        self.store_type_scaler             = pickle.load(open(self.home_path + 'parameter/store_type_scaler.pkl', 'rb'))
     
     def data_cleaning(self,df1):
 
@@ -141,8 +140,8 @@ class Rossmann (object):
         assortment_dict = {'basic':1,'extra':2,'extended':3}
         df5['assortment'] = df5['assortment'].map(assortment_dict)
         
-        ### 5.3.2 Response Variable Transformation
-        df5['sales']= np.log1p(df5['sales'])
+#         ### 5.3.2 Response Variable Transformation
+#         df5['sales']= np.log1p(df5['sales'])
 
         ### 5.3.2 Nature Transformation
         #month
@@ -162,14 +161,14 @@ class Rossmann (object):
         df5['day_of_week_cos']= df5['day_of_week'].apply(lambda x: np.cos(x * (2. * np.pi/7)))
         
         cols_selected = ['store','promo','store_type','assortment','competition_distance','competition_open_since_month','competition_open_since_year','promo2','promo2_since_week',
-                         'promo2_since_year','competition_time_month','promo_since_week','month_sin','month_cos','day_sin','day_cos','week_of_year_cos','day_of_week_sin', 'day_of_week_cos']
+    'promo2_since_year','competition_time_month','promo_since_week','month_sin','month_cos','day_sin','day_cos','week_of_year_cos','day_of_week_sin', 'day_of_week_cos']
         
-        return df5
+        return df5[cols_selected]
     
     
     def get_prediction(self,modelo,original_data,test_data):
         #prediction
-        pred = model.predict(test_data)
+        pred = modelo.predict(test_data)
         
         #join pred into the original data
         original_data['prediction'] = np.expm1(pred)
